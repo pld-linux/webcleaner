@@ -12,7 +12,7 @@ URL:		http://webcleaner.sourceforge.net/
 BuildRequires:	python >= 2.3.1
 Requires:	python-pyOpenSSL
 Requires:	python-Crypto
-Requires:	python-Imagin
+Requires:	python-Imaging
 Requires:	openssl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
