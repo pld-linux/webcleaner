@@ -76,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog COPYING INSTALL NEWS README TODO
+%doc AUTHORS ChangeLog INSTALL NEWS README TODO
 #%attr(755,root,root) /bin/*
 #%attr(755,root,root) /lib/python/*
 #%attr(755,root,root) %{_datadir}/*
