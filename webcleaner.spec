@@ -58,6 +58,10 @@ Mo¿liwo¶ci:
 %patch0 -p1
 
 %build
+%{__aclocal}
+%{__autoconf}
+#%%{__autoheader}
+%{__automake}
 %configure
 %{__make}
 %{__python} setup.py build
