@@ -9,6 +9,8 @@ Source0:	http://dl.sourceforge.net/webcleaner/%{name}-%{version}.tar.gz
 # Source0-md5:	6c95f6c590dfcdfa29f15bf8e5e22235
 Patch0:		%{name}-python-path.patch
 URL:		http://webcleaner.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	python >= 2.3.1
 Requires:	python-pyOpenSSL
 Requires:	python-Crypto
