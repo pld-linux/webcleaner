@@ -1,13 +1,12 @@
 Summary:	WebCleaner - a filtering HTTP proxy
 Summary(pl):	WebCleaner - filtruj±ce proxy HTTP
 Name:		webcleaner
-Version:	2.19
-Release:	0.2
+Version:	2.24
+Release:	0.1
 License:	GPL
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/webcleaner/%{name}-%{version}.tar.gz
-# Source0-md5:	6c95f6c590dfcdfa29f15bf8e5e22235
-# Source0-size:	1450735
+# Source0-md5:	38dea5b731af0c29fcc16cd16897f12f
 Patch0:		%{name}-python-path.patch
 URL:		http://webcleaner.sourceforge.net/
 BuildRequires:	autoconf
@@ -58,7 +57,7 @@ Mo¿liwo¶ci:
 
 %prep
 %setup -q
-%patch0 -p1
+#%patch0 -p1
 
 %build
 %{__aclocal}
