@@ -1,0 +1,9 @@
+--- webcleaner-2.18/po/Makefile.am	2004-05-03 08:56:56.000000000 +0000
++++ webcleaner-2.18.new/po/Makefile.am	2004-07-26 11:37:18.491309232 +0000
+@@ -1,5 +1,5 @@
+ # use scripts found in Tools/i18n of the Python distribution
+-PYTHON := python2.3
++PYTHON := python
+ GETTEXT := $(PYTHON) pygettext.py -k i18n._ -k wc.i18n._
+ #MSGFMT := $(PYTHON) msgfmt.py
+ MSGFMT := @MSGFMT@ -c
