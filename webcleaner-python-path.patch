@@ -1,116 +1,154 @@
---- webcleaner-2.19/test/getssl.py	2004-07-27 19:17:15.000000000 +0000
-+++ webcleaner-2.19.new/test/getssl.py	2004-07-28 10:52:47.039064256 +0000
+diff -ur webcleaner-2.24/config/adzap2wc.py webcleaner-2.24.new/config/adzap2wc.py
+--- webcleaner-2.24/config/adzap2wc.py	2004-12-11 18:00:21.000000000 +0000
++++ webcleaner-2.24.new/config/adzap2wc.py	2004-12-11 22:26:13.774865008 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
- """print headers of an url"""
- 
---- webcleaner-2.19/test/head.py	2004-07-27 19:17:15.000000000 +0000
-+++ webcleaner-2.19.new/test/head.py	2004-07-28 10:52:47.040064104 +0000
+ # this script has to be executed in the config parent dir
+ """Generate WebCleaner .zap files from an AdZapper squid_redirect file"""
+diff -ur webcleaner-2.24/config/bl2wc.py webcleaner-2.24.new/config/bl2wc.py
+--- webcleaner-2.24/config/bl2wc.py	2004-12-11 18:00:21.000000000 +0000
++++ webcleaner-2.24.new/config/bl2wc.py	2004-12-11 22:26:26.828880496 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
- """print headers of an url"""
+ # this script has to be executed in the config parent dir
+ """Generate blacklist_XXX folders with blocking and rewriting
+diff -ur webcleaner-2.24/config/dmozfilter.py webcleaner-2.24.new/config/dmozfilter.py
+--- webcleaner-2.24/config/dmozfilter.py	2004-12-11 18:00:21.000000000 +0000
++++ webcleaner-2.24.new/config/dmozfilter.py	2004-12-11 22:26:33.330892040 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2.3
++#!/usr/bin/python
+ # filter the big dmoz file
+ # Usage:
+ # zcat content.rdf.u8.gz | dmozfilter.py | gzip --best > dmoz.rdf.stripped.gz
+diff -ur webcleaner-2.24/config/reindent.py webcleaner-2.24.new/config/reindent.py
+--- webcleaner-2.24/config/reindent.py	2004-12-11 18:00:22.000000000 +0000
++++ webcleaner-2.24.new/config/reindent.py	2004-12-11 22:26:43.143400312 +0000
+@@ -1,4 +1,4 @@
+-#! /usr/bin/python2.3
++#! /usr/bin/python
  
---- webcleaner-2.19/test/parsefile.py	2004-07-27 19:17:15.000000000 +0000
-+++ webcleaner-2.19.new/test/parsefile.py	2004-07-28 10:52:47.047063040 +0000
+ # Released to the public domain, by Tim Peters, 03 October 2000.
+ 
+diff -ur webcleaner-2.24/test/Makefile webcleaner-2.24.new/test/Makefile
+--- webcleaner-2.24/test/Makefile	2004-12-11 18:00:24.000000000 +0000
++++ webcleaner-2.24.new/test/Makefile	2004-12-11 22:27:21.841517304 +0000
+@@ -1,5 +1,5 @@
+ # we use the scripts in Tools/i18n of the Python 2.3 distribution
+-PYTHON := python2.3
++PYTHON := python
+ I18NTOOLS := ../po
+ GETTEXT := $(PYTHON) $(I18NTOOLS)/pygettext.py
+ MSGFMT := $(PYTHON) $(I18NTOOLS)/msgfmt.py
+diff -ur webcleaner-2.24/test/block.py webcleaner-2.24.new/test/block.py
+--- webcleaner-2.24/test/block.py	2004-12-11 18:00:24.000000000 +0000
++++ webcleaner-2.24.new/test/block.py	2004-12-11 22:27:08.381563528 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  
  def _main ():
---- webcleaner-2.19/test/pconfig.py	2004-07-27 19:17:15.000000000 +0000
-+++ webcleaner-2.19.new/test/pconfig.py	2004-07-28 10:52:47.047063040 +0000
+diff -ur webcleaner-2.24/test/exportratings.py webcleaner-2.24.new/test/exportratings.py
+--- webcleaner-2.24/test/exportratings.py	2004-12-11 18:00:24.000000000 +0000
++++ webcleaner-2.24.new/test/exportratings.py	2004-12-11 22:27:08.381563528 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2.3
++#!/usr/bin/python
+ # -*- coding: iso-8859-1 -*-
+ 
+ def _main ():
+diff -ur webcleaner-2.24/test/filterfile.py webcleaner-2.24.new/test/filterfile.py
+--- webcleaner-2.24/test/filterfile.py	2004-12-11 18:00:25.000000000 +0000
++++ webcleaner-2.24.new/test/filterfile.py	2004-12-11 22:27:08.382563376 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2.3
++#!/usr/bin/python
+ # -*- coding: iso-8859-1 -*-
+ """filter given .html file with Replacer, Rewriter and BinaryCharFilter
+ module"""
+diff -ur webcleaner-2.24/test/get.py webcleaner-2.24.new/test/get.py
+--- webcleaner-2.24/test/get.py	2004-12-11 18:00:25.000000000 +0000
++++ webcleaner-2.24.new/test/get.py	2004-12-11 22:27:08.383563224 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2.3
++#!/usr/bin/python
+ # -*- coding: iso-8859-1 -*-
+ """print headers of an url"""
+ 
+diff -ur webcleaner-2.24/test/getssl.py webcleaner-2.24.new/test/getssl.py
+--- webcleaner-2.24/test/getssl.py	2004-12-11 18:00:25.000000000 +0000
++++ webcleaner-2.24.new/test/getssl.py	2004-12-11 22:27:08.383563224 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2.3
++#!/usr/bin/python
+ # -*- coding: iso-8859-1 -*-
+ """print headers of an url"""
+ 
+diff -ur webcleaner-2.24/test/head.py webcleaner-2.24.new/test/head.py
+--- webcleaner-2.24/test/head.py	2004-12-11 18:00:25.000000000 +0000
++++ webcleaner-2.24.new/test/head.py	2004-12-11 22:27:08.384563072 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2.3
++#!/usr/bin/python
+ # -*- coding: iso-8859-1 -*-
+ """print headers of an url"""
+ 
+diff -ur webcleaner-2.24/test/imagereduce.py webcleaner-2.24.new/test/imagereduce.py
+--- webcleaner-2.24/test/imagereduce.py	2004-12-11 18:00:25.000000000 +0000
++++ webcleaner-2.24.new/test/imagereduce.py	2004-12-11 22:27:08.384563072 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2.3
++#!/usr/bin/python
+ # -*- coding: iso-8859-1 -*-
+ 
+ import sys
+diff -ur webcleaner-2.24/test/parsefile.py webcleaner-2.24.new/test/parsefile.py
+--- webcleaner-2.24/test/parsefile.py	2004-12-11 18:00:25.000000000 +0000
++++ webcleaner-2.24.new/test/parsefile.py	2004-12-11 22:27:08.385562920 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2.3
++#!/usr/bin/python
+ # -*- coding: iso-8859-1 -*-
+ 
+ def _main (args):
+diff -ur webcleaner-2.24/test/pconfig.py webcleaner-2.24.new/test/pconfig.py
+--- webcleaner-2.24/test/pconfig.py	2004-12-11 18:00:25.000000000 +0000
++++ webcleaner-2.24.new/test/pconfig.py	2004-12-11 22:27:08.386562768 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  """configuration loading profiling
  """
---- webcleaner-2.19/test/pfilterfile.py	2004-07-27 19:17:15.000000000 +0000
-+++ webcleaner-2.19.new/test/pfilterfile.py	2004-07-28 10:52:47.048062888 +0000
+diff -ur webcleaner-2.24/test/pfilterfile.py webcleaner-2.24.new/test/pfilterfile.py
+--- webcleaner-2.24/test/pfilterfile.py	2004-12-11 18:00:25.000000000 +0000
++++ webcleaner-2.24.new/test/pfilterfile.py	2004-12-11 22:27:08.386562768 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  """USAGE: test/run.sh test/pfilterfile.py <.html file>"""
  
---- webcleaner-2.19/test/showprof.py	2004-07-27 19:17:15.000000000 +0000
-+++ webcleaner-2.19.new/test/showprof.py	2004-07-28 10:52:47.048062888 +0000
+diff -ur webcleaner-2.24/test/showprof.py webcleaner-2.24.new/test/showprof.py
+--- webcleaner-2.24/test/showprof.py	2004-12-11 18:00:25.000000000 +0000
++++ webcleaner-2.24.new/test/showprof.py	2004-12-11 22:27:08.386562768 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  
  def _main (fname):
---- webcleaner-2.19/po/Makefile.am	2004-07-18 20:59:43.000000000 +0000
-+++ webcleaner-2.19.new/po/Makefile.am	2004-07-28 08:25:26.514028344 +0000
-@@ -1,5 +1,5 @@
- # use scripts found in Tools/i18n of the Python distribution
--PYTHON := python2.3
-+PYTHON := python
- GETTEXT := $(PYTHON) pygettext.py -k bk.i18n._
- #MSGFMT := $(PYTHON) msgfmt.py
- MSGFMT := @MSGFMT@ -c
---- webcleaner-2.19/debian/control	2004-07-27 19:17:13.000000000 +0000
-+++ webcleaner-2.19.new/debian/control	2004-07-28 11:11:02.781486088 +0000
-@@ -3,13 +3,13 @@
- Priority: optional
- Maintainer: Bastian Kleineidam <calvin@debian.org>
- Standards-Version: 3.6.1
--Build-Depends: python (>= 2.3.1), python2.3-dev (>= 2.3.1), debhelper (>= 4.1.16), debconf (>= 1.2.9), gettext
-+Build-Depends: python (>= 2.3.1), python-dev (>= 2.3.1), debhelper (>= 4.1.16), debconf (>= 1.2.9), gettext
- 
- Package: webcleaner
- Architecture: any
--Depends: python2.3 (>= 2.3.1), debconf (>= 1.2.9), python2.3-imaging, python2.3-crypto, runit, webcleaner-common (>= ${Source-Version}), python2.3-pyopenssl
--Conflicts: python2.3-psyco (<< 1.1.1)
--Suggests: python2.3-psyco, clamav-daemon
-+Depends: python (>= 2.3.1), debconf (>= 1.2.9), python-imaging, python-crypto, runit, webcleaner-common (>= ${Source-Version}), python-pyopenssl
-+Conflicts: python-psyco (<< 1.1.1)
-+Suggests: python-psyco, clamav-daemon
- Description: a filtering HTTP proxy
-  Features:
-   * HTTP/1.1 support
---- webcleaner-2.19/debian/rules	2004-07-27 19:17:13.000000000 +0000
-+++ webcleaner-2.19.new/debian/rules	2004-07-28 11:10:47.087871880 +0000
-@@ -1,7 +1,7 @@
- #! /usr/bin/make -f
- # Sample debian/rules that uses debhelper.
- # GNU copyright 1997 to 1999 by Joey Hess.
--PYTHON := python2.3
-+PYTHON := python
- PACKAGE := webcleaner
- BASE := debian/$(PACKAGE)
- DOCDIR := $(BASE)/usr/share/doc/$(PACKAGE)
---- webcleaner-2.19/debian/webcleaner.postinst	2004-07-27 19:17:13.000000000 +0000
-+++ webcleaner-2.19.new/debian/webcleaner.postinst	2004-07-28 11:10:55.165643872 +0000
-@@ -54,7 +54,7 @@
-     fi
- fi
- 
--PYTHON=python2.3
-+PYTHON=python
- if which $PYTHON >/dev/null 2>&1; then
-     DIRLIST="/usr/lib/$PYTHON/site-packages/wc"
-     for i in $DIRLIST; do
---- webcleaner-2.19/docs/devel/pygettext_i18n.diff	2004-05-05 20:26:42.000000000 +0000
-+++ webcleaner-2.19.new/docs/devel/pygettext_i18n.diff	2004-07-28 14:44:48.917262936 +0000
+diff -ur webcleaner-2.24/test.py webcleaner-2.24.new/test.py
+--- webcleaner-2.24/test.py	2004-12-11 18:00:37.000000000 +0000
++++ webcleaner-2.24.new/test.py	2004-12-11 22:25:04.687367904 +0000
 @@ -1,4 +1,4 @@
----- /usr/share/doc/python2.3/examples/Tools/i18n/pygettext.py	2004-05-01 08:16:58.000000000 +0200
-+--- /usr/share/doc/python/examples/Tools/i18n/pygettext.py	2004-05-01 08:16:58.000000000 +0200
- +++ pygettext.py	2004-05-05 22:25:33.000000000 +0200
- @@ -12,6 +12,8 @@
-  # directory (including globbing chars, important for Win32).
---- webcleaner-2.19/wc/proxy/Dispatcher.py	2004-07-27 19:17:18.000000000 +0000
-+++ webcleaner-2.19.new/wc/proxy/Dispatcher.py	2004-07-28 14:44:02.847266640 +0000
-@@ -1,5 +1,5 @@
- # -*- coding: iso-8859-1 -*-
--"""A modified dispatcher class, taken from python2.3/asyncore.py.
-+"""A modified dispatcher class, taken from python/asyncore.py.
- The following changes were made:
- 
- - use new-style object inheritance
+-#!/usr/bin/env python2.3
++#!/usr/bin/env python
+ #
+ # SchoolTool - common information systems platform for school administration
+ # Copyright (c) 2003 Shuttleworth Foundation
