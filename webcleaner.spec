@@ -1,8 +1,8 @@
 Summary:	WebCleaner - a filtering HTTP proxy
-Summary(pl):	WebCleaner - filtrujace proxy HTTP
+Summary(pl):	WebCleaner - filtruj±ce proxy HTTP
 Name:		webcleaner
 Version:	2.19
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/webcleaner/%{name}-%{version}.tar.gz
@@ -69,11 +69,17 @@ Mo¿liwo¶ci:
 %install
 rm -rf $RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_prefix}/lib/python}
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %{__python} setup.py install \
 	--home $RPM_BUILD_ROOT
+
+mv $RPM_BUILD_ROOT/share/* 		$RPM_BUILD_ROOT%{_datadir}/
+mv $RPM_BUILD_ROOT/bin/*   		$RPM_BUILD_ROOT%{_bindir}/
+mv $RPM_BUILD_ROOT/lib/python/* 	$RPM_BUILD_ROOT%{_prefix}/lib/python/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -81,7 +87,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog INSTALL NEWS README TODO
-#%attr(755,root,root) /bin/*
-#%attr(755,root,root) /lib/python/*
-#%attr(755,root,root) %{_datadir}/*
-#%attr(755,root,root) /share/*
+%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_prefix}/lib/python/*
+%attr(755,root,root) %{_datadir}/*
