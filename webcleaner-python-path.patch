@@ -1,154 +1,153 @@
-diff -ur webcleaner-2.24/config/adzap2wc.py webcleaner-2.24.new/config/adzap2wc.py
---- webcleaner-2.24/config/adzap2wc.py	2004-12-11 18:00:21.000000000 +0000
-+++ webcleaner-2.24.new/config/adzap2wc.py	2004-12-11 22:26:13.774865008 +0000
+diff -ur webcleaner-2.29/config/adzap2wc.py webcleaner-2.29.new/config/adzap2wc.py
+--- webcleaner-2.29/config/adzap2wc.py	2005-04-11 19:32:17.000000000 +0000
++++ webcleaner-2.29.new/config/adzap2wc.py	2005-04-12 09:08:28.535760600 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  # this script has to be executed in the config parent dir
  """Generate WebCleaner .zap files from an AdZapper squid_redirect file"""
-diff -ur webcleaner-2.24/config/bl2wc.py webcleaner-2.24.new/config/bl2wc.py
---- webcleaner-2.24/config/bl2wc.py	2004-12-11 18:00:21.000000000 +0000
-+++ webcleaner-2.24.new/config/bl2wc.py	2004-12-11 22:26:26.828880496 +0000
+diff -ur webcleaner-2.29/config/bl2wc.py webcleaner-2.29.new/config/bl2wc.py
+--- webcleaner-2.29/config/bl2wc.py	2005-04-11 19:32:17.000000000 +0000
++++ webcleaner-2.29.new/config/bl2wc.py	2005-04-12 09:08:28.537760296 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  # this script has to be executed in the config parent dir
- """Generate blacklist_XXX folders with blocking and rewriting
-diff -ur webcleaner-2.24/config/dmozfilter.py webcleaner-2.24.new/config/dmozfilter.py
---- webcleaner-2.24/config/dmozfilter.py	2004-12-11 18:00:21.000000000 +0000
-+++ webcleaner-2.24.new/config/dmozfilter.py	2004-12-11 22:26:33.330892040 +0000
+ """Generate blacklist_XYZ folders with blocking and rewriting
+diff -ur webcleaner-2.29/config/dmozfilter.py webcleaner-2.29.new/config/dmozfilter.py
+--- webcleaner-2.29/config/dmozfilter.py	2005-04-11 19:32:17.000000000 +0000
++++ webcleaner-2.29.new/config/dmozfilter.py	2005-04-12 09:08:28.538760144 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # filter the big dmoz file
  # Usage:
  # zcat content.rdf.u8.gz | dmozfilter.py | gzip --best > dmoz.rdf.stripped.gz
-diff -ur webcleaner-2.24/config/reindent.py webcleaner-2.24.new/config/reindent.py
---- webcleaner-2.24/config/reindent.py	2004-12-11 18:00:22.000000000 +0000
-+++ webcleaner-2.24.new/config/reindent.py	2004-12-11 22:26:43.143400312 +0000
+diff -ur webcleaner-2.29/config/reindent.py webcleaner-2.29.new/config/reindent.py
+--- webcleaner-2.29/config/reindent.py	2005-04-11 19:32:18.000000000 +0000
++++ webcleaner-2.29.new/config/reindent.py	2005-04-12 09:08:28.539759992 +0000
 @@ -1,4 +1,4 @@
 -#! /usr/bin/python2.3
 +#! /usr/bin/python
  
  # Released to the public domain, by Tim Peters, 03 October 2000.
  
-diff -ur webcleaner-2.24/test/Makefile webcleaner-2.24.new/test/Makefile
---- webcleaner-2.24/test/Makefile	2004-12-11 18:00:24.000000000 +0000
-+++ webcleaner-2.24.new/test/Makefile	2004-12-11 22:27:21.841517304 +0000
-@@ -1,5 +1,5 @@
- # we use the scripts in Tools/i18n of the Python 2.3 distribution
--PYTHON := python2.3
-+PYTHON := python
- I18NTOOLS := ../po
- GETTEXT := $(PYTHON) $(I18NTOOLS)/pygettext.py
- MSGFMT := $(PYTHON) $(I18NTOOLS)/msgfmt.py
-diff -ur webcleaner-2.24/test/block.py webcleaner-2.24.new/test/block.py
---- webcleaner-2.24/test/block.py	2004-12-11 18:00:24.000000000 +0000
-+++ webcleaner-2.24.new/test/block.py	2004-12-11 22:27:08.381563528 +0000
+diff -ur webcleaner-2.29/test/block.py webcleaner-2.29.new/test/block.py
+--- webcleaner-2.29/test/block.py	2005-04-11 19:32:21.000000000 +0000
++++ webcleaner-2.29.new/test/block.py	2005-04-12 09:08:40.708910000 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  
  def _main ():
-diff -ur webcleaner-2.24/test/exportratings.py webcleaner-2.24.new/test/exportratings.py
---- webcleaner-2.24/test/exportratings.py	2004-12-11 18:00:24.000000000 +0000
-+++ webcleaner-2.24.new/test/exportratings.py	2004-12-11 22:27:08.381563528 +0000
+diff -ur webcleaner-2.29/test/exportratings.py webcleaner-2.29.new/test/exportratings.py
+--- webcleaner-2.29/test/exportratings.py	2005-04-11 19:32:21.000000000 +0000
++++ webcleaner-2.29.new/test/exportratings.py	2005-04-12 09:08:40.709909848 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  
  def _main ():
-diff -ur webcleaner-2.24/test/filterfile.py webcleaner-2.24.new/test/filterfile.py
---- webcleaner-2.24/test/filterfile.py	2004-12-11 18:00:25.000000000 +0000
-+++ webcleaner-2.24.new/test/filterfile.py	2004-12-11 22:27:08.382563376 +0000
+diff -ur webcleaner-2.29/test/filterfile.py webcleaner-2.29.new/test/filterfile.py
+--- webcleaner-2.29/test/filterfile.py	2005-04-11 19:32:21.000000000 +0000
++++ webcleaner-2.29.new/test/filterfile.py	2005-04-12 09:08:40.709909848 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
- """filter given .html file with Replacer, Rewriter and BinaryCharFilter
- module"""
-diff -ur webcleaner-2.24/test/get.py webcleaner-2.24.new/test/get.py
---- webcleaner-2.24/test/get.py	2004-12-11 18:00:25.000000000 +0000
-+++ webcleaner-2.24.new/test/get.py	2004-12-11 22:27:08.383563224 +0000
-@@ -1,4 +1,4 @@
--#!/usr/bin/python2.3
-+#!/usr/bin/python
- # -*- coding: iso-8859-1 -*-
- """print headers of an url"""
- 
-diff -ur webcleaner-2.24/test/getssl.py webcleaner-2.24.new/test/getssl.py
---- webcleaner-2.24/test/getssl.py	2004-12-11 18:00:25.000000000 +0000
-+++ webcleaner-2.24.new/test/getssl.py	2004-12-11 22:27:08.383563224 +0000
+ """
+ Filter given .html file with Replacer, Rewriter and BinaryCharFilter module.
+diff -ur webcleaner-2.29/test/get.py webcleaner-2.29.new/test/get.py
+--- webcleaner-2.29/test/get.py	2005-04-11 19:32:21.000000000 +0000
++++ webcleaner-2.29.new/test/get.py	2005-04-12 09:08:40.711909544 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  """print headers of an url"""
  
-diff -ur webcleaner-2.24/test/head.py webcleaner-2.24.new/test/head.py
---- webcleaner-2.24/test/head.py	2004-12-11 18:00:25.000000000 +0000
-+++ webcleaner-2.24.new/test/head.py	2004-12-11 22:27:08.384563072 +0000
+diff -ur webcleaner-2.29/test/getssl.py webcleaner-2.29.new/test/getssl.py
+--- webcleaner-2.29/test/getssl.py	2005-04-11 19:32:21.000000000 +0000
++++ webcleaner-2.29.new/test/getssl.py	2005-04-12 09:08:40.712909392 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  """print headers of an url"""
  
-diff -ur webcleaner-2.24/test/imagereduce.py webcleaner-2.24.new/test/imagereduce.py
---- webcleaner-2.24/test/imagereduce.py	2004-12-11 18:00:25.000000000 +0000
-+++ webcleaner-2.24.new/test/imagereduce.py	2004-12-11 22:27:08.384563072 +0000
+diff -ur webcleaner-2.29/test/head.py webcleaner-2.29.new/test/head.py
+--- webcleaner-2.29/test/head.py	2005-04-11 19:32:22.000000000 +0000
++++ webcleaner-2.29.new/test/head.py	2005-04-12 09:08:40.712909392 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2.3
++#!/usr/bin/python
+ # -*- coding: iso-8859-1 -*-
+ """print headers of an url"""
+ 
+diff -ur webcleaner-2.29/test/imagereduce.py webcleaner-2.29.new/test/imagereduce.py
+--- webcleaner-2.29/test/imagereduce.py	2005-04-11 19:32:22.000000000 +0000
++++ webcleaner-2.29.new/test/imagereduce.py	2005-04-12 09:08:40.713909240 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  
  import sys
-diff -ur webcleaner-2.24/test/parsefile.py webcleaner-2.24.new/test/parsefile.py
---- webcleaner-2.24/test/parsefile.py	2004-12-11 18:00:25.000000000 +0000
-+++ webcleaner-2.24.new/test/parsefile.py	2004-12-11 22:27:08.385562920 +0000
+diff -ur webcleaner-2.29/test/magic.py webcleaner-2.29.new/test/magic.py
+--- webcleaner-2.29/test/magic.py	2005-04-11 19:32:22.000000000 +0000
++++ webcleaner-2.29.new/test/magic.py	2005-04-12 09:08:40.714909088 +0000
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2.3
++#!/usr/bin/python
+ # -*- coding: iso-8859-1 -*-
+ 
+ import sys
+diff -ur webcleaner-2.29/test/parsefile.py webcleaner-2.29.new/test/parsefile.py
+--- webcleaner-2.29/test/parsefile.py	2005-04-11 19:32:22.000000000 +0000
++++ webcleaner-2.29.new/test/parsefile.py	2005-04-12 09:08:40.714909088 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  
  def _main (args):
-diff -ur webcleaner-2.24/test/pconfig.py webcleaner-2.24.new/test/pconfig.py
---- webcleaner-2.24/test/pconfig.py	2004-12-11 18:00:25.000000000 +0000
-+++ webcleaner-2.24.new/test/pconfig.py	2004-12-11 22:27:08.386562768 +0000
+diff -ur webcleaner-2.29/test/pconfig.py webcleaner-2.29.new/test/pconfig.py
+--- webcleaner-2.29/test/pconfig.py	2005-04-11 19:32:22.000000000 +0000
++++ webcleaner-2.29.new/test/pconfig.py	2005-04-12 09:08:40.715908936 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  """configuration loading profiling
  """
-diff -ur webcleaner-2.24/test/pfilterfile.py webcleaner-2.24.new/test/pfilterfile.py
---- webcleaner-2.24/test/pfilterfile.py	2004-12-11 18:00:25.000000000 +0000
-+++ webcleaner-2.24.new/test/pfilterfile.py	2004-12-11 22:27:08.386562768 +0000
+diff -ur webcleaner-2.29/test/pfilterfile.py webcleaner-2.29.new/test/pfilterfile.py
+--- webcleaner-2.29/test/pfilterfile.py	2005-04-11 19:32:22.000000000 +0000
++++ webcleaner-2.29.new/test/pfilterfile.py	2005-04-12 09:08:40.715908936 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  """USAGE: test/run.sh test/pfilterfile.py <.html file>"""
  
-diff -ur webcleaner-2.24/test/showprof.py webcleaner-2.24.new/test/showprof.py
---- webcleaner-2.24/test/showprof.py	2004-12-11 18:00:25.000000000 +0000
-+++ webcleaner-2.24.new/test/showprof.py	2004-12-11 22:27:08.386562768 +0000
+diff -ur webcleaner-2.29/test/showprof.py webcleaner-2.29.new/test/showprof.py
+--- webcleaner-2.29/test/showprof.py	2005-04-11 19:32:22.000000000 +0000
++++ webcleaner-2.29.new/test/showprof.py	2005-04-12 09:08:40.715908936 +0000
 @@ -1,4 +1,4 @@
 -#!/usr/bin/python2.3
 +#!/usr/bin/python
  # -*- coding: iso-8859-1 -*-
  
  def _main (fname):
-diff -ur webcleaner-2.24/test.py webcleaner-2.24.new/test.py
---- webcleaner-2.24/test.py	2004-12-11 18:00:37.000000000 +0000
-+++ webcleaner-2.24.new/test.py	2004-12-11 22:25:04.687367904 +0000
+diff -ur webcleaner-2.29/test.py webcleaner-2.29.new/test.py
+--- webcleaner-2.29/test.py	2005-04-11 19:32:22.000000000 +0000
++++ webcleaner-2.29.new/test.py	2005-04-12 09:08:00.122080136 +0000
 @@ -1,4 +1,4 @@
--#!/usr/bin/env python2.3
-+#!/usr/bin/env python
+-#!/usr/bin/python2.3
++#!/usr/bin/python
  #
  # SchoolTool - common information systems platform for school administration
  # Copyright (c) 2003 Shuttleworth Foundation
