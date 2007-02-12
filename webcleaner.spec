@@ -1,5 +1,5 @@
 Summary:	WebCleaner - a filtering HTTP proxy
-Summary(pl.UTF-8):   WebCleaner - filtrujące proxy HTTP
+Summary(pl.UTF-8):	WebCleaner - filtrujące proxy HTTP
 Name:		webcleaner
 Version:	2.29
 Release:	0.1
