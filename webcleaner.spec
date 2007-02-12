@@ -1,5 +1,5 @@
 Summary:	WebCleaner - a filtering HTTP proxy
-Summary(pl):	WebCleaner - filtruj±ce proxy HTTP
+Summary(pl.UTF-8):   WebCleaner - filtrujƒÖce proxy HTTP
 Name:		webcleaner
 Version:	2.29
 Release:	0.1
@@ -36,24 +36,24 @@ Features:
 - per-host access control
 - configurable over a themable web interface
 
-%description -l pl
-Moøliwo∂ci:
-- obs≥uga HTTP/1.1
-- obs≥uga proxy HTTPS CONNECT i opcjonalna bramki SSL
-- zintegrowany parser HTML, usuwaj±cy niechciany kod (reklamy, flash
+%description -l pl.UTF-8
+Mo≈ºliwo≈õci:
+- obs≈Çuga HTTP/1.1
+- obs≈Çuga proxy HTTPS CONNECT i opcjonalna bramki SSL
+- zintegrowany parser HTML, usuwajƒÖcy niechciany kod (reklamy, flash
   itp.)
-- zintegrowany silnik JavaScriptu, umoøliwia filtrowanie popupÛw
-- wykrywanie i poprawianie w HTML-u znanych b≥ÍdÛw bezpieczeÒstwa
-- kompresja dokumentÛw w locie (przy uøyciu gzipa)
-- wy≥±czanie animowanych GIF-Ûw
-- filtrowanie obrazkÛw po rozmiarze, usuwanie bannerÛw reklamowych
-- zmniejszanie obrazkÛw na JPEG-i niewielkich rozmiarÛw
-- usuwanie/dodawanie/modyfikowanie dowolnych nag≥ÛwkÛw HTTP
+- zintegrowany silnik JavaScriptu, umo≈ºliwia filtrowanie popup√≥w
+- wykrywanie i poprawianie w HTML-u znanych b≈Çƒôd√≥w bezpiecze≈Ñstwa
+- kompresja dokument√≥w w locie (przy u≈ºyciu gzipa)
+- wy≈ÇƒÖczanie animowanych GIF-√≥w
+- filtrowanie obrazk√≥w po rozmiarze, usuwanie banner√≥w reklamowych
+- zmniejszanie obrazk√≥w na JPEG-i niewielkich rozmiar√≥w
+- usuwanie/dodawanie/modyfikowanie dowolnych nag≈Ç√≥wk√≥w HTTP
 - wykorzystywanie czarnych list SquidGuarda
-- modu≥ filtra antywirusowego
-- obs≥uga uwierzytelniania proxy Basic, Digest i (nie testowana) NTLM
-- kontrola dostÍpu na poziomie hosta
-- konfigurowalne przez interfejs WWW z moøliwo∂ci± zmiany motywu
+- modu≈Ç filtra antywirusowego
+- obs≈Çuga uwierzytelniania proxy Basic, Digest i (nie testowana) NTLM
+- kontrola dostƒôpu na poziomie hosta
+- konfigurowalne przez interfejs WWW z mo≈ºliwo≈õciƒÖ zmiany motywu
 
 %prep
 %setup -q
