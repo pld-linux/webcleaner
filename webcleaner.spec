@@ -4,7 +4,7 @@ Name:		webcleaner
 Version:	2.29
 Release:	0.1
 License:	GPL
-Group:		Applications/System
+Group:		Networking/Daemons/HTTP
 Source0:	http://dl.sourceforge.net/webcleaner/%{name}-%{version}.tar.gz
 # Source0-md5:	1b0b37c3722bb1e31f7eb496ce358963
 Patch0:		%{name}-python-path.patch
